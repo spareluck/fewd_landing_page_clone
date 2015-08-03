@@ -440,10 +440,9 @@ body {
   letter-spacing: 0.03em;
    -webkit-font-smoothing: antialiased;
 }
-section {
-  border: 1px solid #fff;
+ul {
+  margin-left: -40px;
 }
-
 /* Navigation Section */
 
 .top-navigation {
@@ -468,7 +467,7 @@ section {
   font-size: 16px; 
   margin-top: 25px;
 }
-.links li {
+.top-navigation .links li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -502,16 +501,17 @@ section {
   text-align: center;
 }
 .introduction .content {
-  margin-top: 250px;
+  padding-top: 250px;
   font-weight: 300;
 }
 .introduction h1 {
-   font-size: 48px;
+  font-size: 48px;
+  font-weight: 300;
 }
 .introduction h3 {
   margin-top: -15px;
   font-size: 25px;
-  font-weight: 300px;
+  font-weight: 300;
 }
 .buttons button {
   background-color: #f15a29;
@@ -534,53 +534,65 @@ section {
 
 .devices {
   text-align: center;
+  margin-bottom: 100px;
 }
 .devices li {
   display: inline-block;
-  margin-right: 70px;
+  margin-right: 90px;
   margin-top: 5px;
-  margin-bottom: 100px;
-  box-sizing: border-box;
-  }
+}
 .devices .caption {
-  margin-top: 25px;
+  margin-top: 40px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .cases h2 {
   text-align: center;
   font-size: 44px;
   margin-top: 100px;
+  font-weight: 300;
+}
+.cases h3 {
+  font-weight: 400;
 }
 
 /* footer */
 
-footer .content {
+.social .content {
   text-align: center;
   width: 960px;
-  margin: 0 auto;
   height: 275px;
+  margin: 0 auto;
 }
-footer .content li {
-   list-style-type: none;
-   display: inline-block;
-   border-color: #eaebec;
-   border-radius: 20px;
-   width: 20px;
-   height: 20px;
-   margin-right: 10px;
+.social li {
+  list-style-type: none;
+  display: inline-block;
 }
-
-footer .content hr {
-  color: #eaebec;
+.social hr {
+  color: #eee;
 }
-
-footer .content h5 {
+.social h5 {
   font-size: 16px;
+  font-weight: 400;
 }
-
-footer .content .copy {
+.social .copy {
   color: #838994;
   font-size: 14px;
+  font-weight: 300;
 }
-
+.social .icons i {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.social .twitter {
+  color: #55ACEE;
+}
+.social .facebook {
+  color:#5783A7;
+}
+.social .instagram {
+  color:#5A72AB;
+}
