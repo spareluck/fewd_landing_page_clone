@@ -430,6 +430,7 @@ th {
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -441,7 +442,7 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 ul {
-  margin-left: -40px;
+  margin-left: -2.5em;
 }
 /* Navigation Section */
 
@@ -452,24 +453,23 @@ ul {
   z-index: 9999;
   border-bottom: 1px solid #ddd;
 }
-.top-navigation > .content {
-  height: 70px;
+.top-navigation .content {
+  height: 4.375em;
   margin: 0 auto;
-  padding: 0px 15px;
-  width: 970px;
+  padding: 0 1em;
+  width: 85%;
 }
 .logo {
-  margin-top: 14px;
-  margin-right: 65px;
+  margin: 0.875em 4.0625em 0;
 }
 .links {
   float: right;
-  font-size: 16px; 
-  margin-top: 25px;
+  font-size: 1em; 
+  margin-top: 1.5625em;
 }
 .top-navigation .links li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 1.5625em;
 }
 .links a { 
   text-decoration: none;
@@ -494,34 +494,32 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 735px;
+  height: 45.9375em;
 }
 .introduction .content, .buttons {
   color: #fff;
   text-align: center;
 }
 .introduction .content {
-  padding-top: 250px;
+  padding-top: 15.625em;
   font-weight: 300;
 }
 .introduction h1 {
-  font-size: 48px;
+  font-size: 3em;
   font-weight: 300;
 }
 .introduction h3 {
-  margin-top: -15px;
-  font-size: 25px;
+  margin-top: -1em;
+  font-size: 1.5625em;
   font-weight: 300;
 }
 .buttons button {
   background-color: #f15a29;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -10px;
-  padding: 16px 35px;
-  border-radius: 4px;
+  margin: -0.625em auto 0;
+  padding: 1em 2.1875em;
+  border-radius: 0.25em;
   line-height: 1.33;
-  font-size: 18px;
+  font-size: 1.125em;
   border: #f15a29;
 }
 .buttons button:hover {
@@ -534,22 +532,21 @@ ul {
 
 .devices {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 6.25em;
 }
 .devices li {
   display: inline-block;
-  margin-right: 90px;
-  margin-top: 5px;
+  margin: 0.3125em 0.8em 0;
 }
 .devices .caption {
-  margin-top: 40px;
-  font-size: 20px;
+  margin-top: 2.75em;
+  font-size: 1.25em;
   font-weight: 300;
 }
 .cases h2 {
   text-align: center;
-  font-size: 44px;
-  margin-top: 100px;
+  font-size: 2.75em;
+  margin-top: 6.25em;
   font-weight: 300;
 }
 .cases h3 {
@@ -558,41 +555,138 @@ ul {
 
 /* footer */
 
-.social .content {
+footer .content {
   text-align: center;
-  width: 960px;
-  height: 275px;
+  width: 85%;
+  height: 17.1875em;
   margin: 0 auto;
 }
-.social li {
+footer li {
   list-style-type: none;
   display: inline-block;
 }
-.social hr {
+footer hr {
   color: #eee;
 }
-.social h5 {
-  font-size: 16px;
+footer h5 {
+  font-size: 1em;
   font-weight: 400;
 }
-.social .copy {
+footer span {
   color: #838994;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 300;
 }
-.social .icons i {
-  border: 1px solid #ddd;
-  padding: 10px;
+footer .icons i {
+  border: 0.0625em solid #ddd;
+  padding: 0.625em;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 2.5em;
+  height: 2.5em;
 }
-.social .twitter {
+footer .twitter {
   color: #55ACEE;
 }
-.social .facebook {
+footer .facebook {
   color:#5783A7;
 }
-.social .instagram {
+footer .instagram {
   color:#5A72AB;
 }
+
+/* Responsive Layout */
+
+@media screen and (max-width: 970px) {
+  .links {
+    text-align: center;
+    float: none;
+    display: inline-block;
+  }
+  .logo {
+    display: inline-block;
+    float: left;
+    margin: 0.875em 1em 0;
+  }
+  .devices li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 712px) {
+ .top-navigation .content {
+    width: 100%;
+  }
+  footer h5 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+  }
+  footer span {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 605px) {
+  .top-navigation {
+    position: static;
+  }
+  .top-navigation .content {
+    height: 18em;
+  }
+  .top-navigation .links {
+    text-align: center;
+    width: 85%;
+    margin: 0.5em auto;
+  }
+  .top-navigation .links li {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+  }
+  .cases h2 {
+    font-size: 2em;
+    margin-top: 2em;
+  }
+  .logo {
+    float: none;
+    display: block;
+    margin: 0.5em auto;
+  }
+  .introduction h1 {
+    font-size: 2em;
+  }
+  .introduction h3 {
+    margin: 1em;
+    font-size: 1.25em;
+  }
+  .buttons button {
+    margin-top: 1em;
+  }
+  .introduction {
+    height: 20em;
+  }
+  .introduction .content {
+    padding-top: 2em;
+    font-weight: 300;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
